@@ -1,0 +1,8 @@
+[package]
+name = "gessing_game"
+version = "0.1.0"
+authors = ["takadev <nontan20xx@gmail.com>"]
+
+[dependencies]
+
+rand="0.3.0"
