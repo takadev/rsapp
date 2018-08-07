@@ -162,3 +162,33 @@ use rand::Rng;
 let mut guess = String::new();
 let guess: u32 = guess.trim().parse().expect("Please type a number!");
 ```
+
+# タプル
+
+```
+let tuple = (100, "hello");
+let (number, word) = tuple;
+
+println!("{:?}", tuple);
+println!("{}", tuple.0);
+println!("{}", tuple.1);
+```
+
+## タプルを返す関数
+
+```
+fn make_tuple() -> (u32, String) {
+    (100, "hello".to_string())
+}
+```
+
+## 1要素のタプル
+
+若干奇妙に思えるが、Rustでは1要素のタプルを定義できる。
+
+この場合タプルの要素の後ろに,を置く必要がある。
+
+
+```
+let sigle_tuple = ("hello",)
+```
